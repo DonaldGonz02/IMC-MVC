@@ -5,6 +5,10 @@
 
 package com.mycompany.mvc.imc;
 
+import CONTROLADOR.controlador;
+import MODELO.modelo;
+import VISTA.FormVista;
+
 /**
  *
  * @author DONALD
@@ -12,6 +16,10 @@ package com.mycompany.mvc.imc;
 public class MVCIMC {
 
     public static void main(String[] args) {
-        System.out.println("Hello World!");
+        modelo modelo= new modelo();
+        FormVista vista = new FormVista();
+        controlador control = new controlador(vista, modelo);
+        control.inicio();
+        vista.setVisible(true);
     }
 }

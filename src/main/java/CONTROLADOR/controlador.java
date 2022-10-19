@@ -25,15 +25,15 @@ public class controlador implements ActionListener{
     }
     
     public void inicio(){
-        vis.setTitle("Ejemplo MVC");
+        vis.setTitle("IMC-ModeloVistaControlador");
         vis.setLocationRelativeTo(null);
     }
     
     public void actionPerformed(ActionEvent e){
-        mo.setPeso(Integer.parseInt(vis.txtPeso.getText()));
-        mo.setAltura(Integer.parseInt(vis.txtAltura.getText()));
+        mo.setPeso(Double.parseDouble(vis.txtPeso.getText()));
+        mo.setAltura(Double.parseDouble(vis.txtAltura.getText()));
         mo.calcular();
-        vis.txtIMC.setSelectionEnd(mo.getIMC());
+        vis.txtIMC.setText(Double.toString(mo.getIMC()));
     }  
 }
 

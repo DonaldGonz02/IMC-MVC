@@ -10,37 +10,53 @@ package MODELO;
  */
 public class modelo {
     
-   private int peso;
-   private int altura;
-   private int IMC;
+   private double peso;
+   private double altura;
+   private double  IMC;
+   private double dato;
 
-    public int getPeso() {
+    public double getPeso() {
         return peso;
     }
 
-    public void setPeso(int peso) {
+    public void setPeso(double peso) {
         this.peso = peso;
     }
 
-    public int getAltura() {
+    public double getAltura() {
         return altura;
     }
 
-    public void setAltura(int altura) {
+    public void setAltura(double altura) {
         this.altura = altura;
     }
 
-    public int getIMC() {
+    public double getIMC() {
         return IMC;
     }
 
-    public void setIMC(int IMC) {
+    public void setIMC(double IMC) {
         this.IMC = IMC;
     }
-    
+
+    public double getDato() {
+        return dato;
+    }
+
+    public void setDato(double dato) {
+        this.dato = dato;
+    }
+
+   
+   
    //método del botón Calcular IMC
-    public int calcular(){
-        this.IMC=peso/(altura*altura);
+    public double calcular(){
+        
+        dato = Math.round(peso/(altura*altura));
+        
+        //double roundDbl = Math.round(d*100.0)/100.0;
+        
+        this.IMC=dato;
         return this.IMC;
     }
     

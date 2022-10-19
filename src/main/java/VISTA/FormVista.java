@@ -69,6 +69,7 @@ public class FormVista extends javax.swing.JFrame {
         txtAltura.setFont(new java.awt.Font("Bookman Old Style", 0, 12)); // NOI18N
         txtAltura.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
+        txtIMC.setEditable(false);
         txtIMC.setFont(new java.awt.Font("Bookman Old Style", 0, 36)); // NOI18N
         txtIMC.setHorizontalAlignment(javax.swing.JTextField.CENTER);
 
